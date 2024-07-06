@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'dahlia';
+    src: url('/public/Fonts/dahlia-medium.otf') format('otf');
+  }
+  
