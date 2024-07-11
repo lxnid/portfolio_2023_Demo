@@ -3,8 +3,15 @@ module.exports = {
   content: ["*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage: (theme) => ({
+        'img-screen-1': `url(Images/bg-1.png)`,
+      }),
       fontFamily: {
-        FontDahlia: ['dahlia','sans-serif'],
+        'dahlia': ['dahlia','sans-serif'],
+        'prim': ['Inter', 'sans-serif'],
+        'sec': ['Poppins', 'arial'],
+        'cursive': ['Ms Madi'],
+        'guest': ['Space Grotesk'],
       },
     },
   },

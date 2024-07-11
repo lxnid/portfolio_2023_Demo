@@ -1,28 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hirusha Rubasinghe</title>
     <!-- CSS -->
-     <link rel="stylesheet" href="/dist/output.css">
-     <!-- ICONS -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css" integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC+3978NBRk=" crossorigin="anonymous">
-     <!-- <script src="https://kit.fontawesome.com/413d16b36e.js" crossorigin="anonymous"></script> -->
-      <!-- FONTS -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Ms+Madi&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-      <!-- swiper css -->
-       <link rel="stylesheet" href="css/swiper-bundle.min.css">
-
-</head>
-<body>
-    <!-- scroll reveal js -->
-    <script src="js/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css"
+      integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC+3978NBRk="
+      crossorigin="anonymous"
+    />
+    <!-- <script src="https://kit.fontawesome.com/413d16b36e.js" crossorigin="anonymous"></script> -->
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Ms+Madi&family=Poppins:wght@300;400&display=swap&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- animation on scroll css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+  <body class="bg-[#0E0E0E] text-white">
+    <!-- landing -->
+    <section
+      class="hero-section bg-img-screen-1 bg-cover container h-screen max-h-screen w-screen max-w-full"
+    >
+      <div class="flex h-fit-content justify-center items-center h-full">
+        <div class="space-y-8 text-center">
+          <h1
+            class="uppercase font-dahlia text-9xl"
+            data-aos="fade"
+            data-aos-duration="3000"
+          >
+            hello world
+          </h1>
+          <h1 class="space-x-5">
+            <div
+              class="font-cursive inline-block text-6xl text-gray-500"
+              data-aos="flip-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
+              Hirusha
+            </div>
+            <div
+              class="font-sec inline-block font-thin text-5xl text-white"
+              data-aos="fade"
+              data-aos-delay="800"
+              data-aos-duration="1000"
+            >
+              Here👋🏽
+            </div>
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- about section -->
+    <section
+      class="about-section grid sm:grid-cols-1 md:grid-cols-2 h-screen sm:space-y-10"
+    >
+      <div
+        data-aos="fade"
+        data-aos-duration="3000"
+        class="about-sec-col-1 flex justify-center items-center px-24 text-6xl font-bold font-prim min-h-[85vh]"
+      >
+        <h1 data-aos="fade" data-aos-duration="3000" data-aos-delay="300">
+          <span class="font-guest text-8xl">"</span><br />
+          <p id="typewriter-text" class="inline">
+            I build and manage innovative, creative and user-centred software
+            experiences.
+          </p>
+        </h1>
+      </div>
+      <div class="about-sec-col-2 flex justify-center items-center px-24">
+        <div class="space-y-8 font-sec text-xl">
+          <div data-aos="fade" data-aos-duration="1000">
+            Lorem ipsum dolor sit amet consectetur. Justo volutpat mauris eget
+            sit ut senectus vestibulum. Bibendum sit lacus nunc eget a et sed
+            tortor. Dictum est erat senectus arcu risus. Tortor lectus donec
+            pellentesque amet consectetur tempus. Nulla neque cras sed sagittis
+            molestie.
+          </div>
+          <div data-aos="fade" data-aos-duration="1000">
+            Lorem ipsum dolor sit amet consectetur. Justo volutpat mauris eget
+            sit ut senectus vestibulum. Bibendum sit lacus nunc eget a et sed
+            tortor. Dictum est erat senectus arcu risus. Tortor lectus donec
+            pellentesque amet consectetur tempus. Nulla neque cras sed sagittis
+            molestie.
+          </div>
+          <div data-aos="fade" data-aos-duration="1000">
+            Lorem ipsum dolor sit amet consectetur. Justo volutpat mauris eget
+            sit ut senectus vestibulum. Bibendum sit lacus nunc eget a et sed
+            tortor. Dictum est erat senectus arcu risus. Tortor lectus donec
+            pellentesque amet consectetur tempus. Nulla neque cras sed sagittis
+            molestie.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-screen"></section>
+    <!-- animation on scroll js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- swiper js -->
-     <script src="js/swiper-bundle.min.js"></script>
-     <!-- main js -->
-     <script src="js/main.js"></script>
-</body>
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
