@@ -1351,7 +1351,7 @@ video {
 }
 
 .hero-section {
-  background-image: url(https://github.com/lxnid/portfolio/blob/c1e52737e03cf63ea9fbd2c664cc11af30563209/dist/Images/bg-1.png);
+  background-image: url(/portfolio/dist/Images/bg-1.png);
 }
 
 .hover\:underline:hover {
