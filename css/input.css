@@ -46,7 +46,7 @@
 
 .about-sec-col-1::before {
   content: "";
-  background-image: url("../dist/Images/bg-2.jpg");
+  background-image: url(dist/Images/bg-2.jpg);
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
   position: absolute;
@@ -62,7 +62,7 @@
 }
 .exp-sec-col-1::before {
   content: "";
-  background-image: url("../dist/Images/bg-3.jpg");
+  background-image: url(/dist/Images/bg-3.jpg);
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
   position: absolute;
@@ -80,7 +80,7 @@
 #work-section::before,
 #summary-section::before {
   content: "";
-  background-image: url(../dist/Images/bg-4.jpg);
+  background-image: url(dist/Images/bg-4.jpg);
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -145,5 +145,5 @@
 }
 
 .hero-section {
-  background-image: url(../dist/Images/bg-1.png);
+  background-image: url(dist/Images/bg-1.png);
 }
