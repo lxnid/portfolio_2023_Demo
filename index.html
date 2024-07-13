@@ -6,14 +6,19 @@
     <title>Hirusha Rubasinghe</title>
     <!-- CSS -->
     <link rel="stylesheet" href="/dist/output.css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- ICONS -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css"
       integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC+3978NBRk="
       crossorigin="anonymous"
-    />
-    <!-- <script src="https://kit.fontawesome.com/413d16b36e.js" crossorigin="anonymous"></script> -->
+    /> -->
+    <script
+      src="https://kit.fontawesome.com/413d16b36e.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,18 +28,25 @@
     />
     <!-- animation on scroll css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- swiper css -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   </head>
-  <body class="bg-[#0E0E0E] text-white">
+  <body class="bg-[#0e0e0e] text-white">
+    <!-- Navigation -->
+    <div
+      id="nav"
+      class="nav font-sec flex flex-col fixed top-[34%] z-20 rounded-r-3xl gap-16 w-min py-6 px-3 bg-[#151515]"
+    >
+      <a href="#section-about" class="">About</a>
+      <a href="#section-experience" class="opacity-50">Experience</a>
+      <a href="" class="opacity-50">Work</a>
+    </div>
     <!-- landing -->
     <section
-      class="hero-section bg-img-screen-1 bg-cover container h-screen max-h-screen w-screen max-w-full"
+      class="hero-section bg-img-screen-1 bg-fixed bg-cover container h-screen max-h-screen w-screen max-w-full"
     >
       <div class="flex h-fit-content justify-center items-center h-full">
         <div class="space-y-8 text-center">
           <h1
-            class="uppercase font-dahlia text-9xl"
+            class="uppercase font-dahlia text-8xl md:text-9xl"
             data-aos="fade"
             data-aos-duration="3000"
           >
@@ -42,7 +54,7 @@
           </h1>
           <h1 class="space-x-5">
             <div
-              class="font-cursive inline-block text-6xl text-gray-500"
+              class="font-cursive inline-block text-5xl md:text-6xl text-gray-500"
               data-aos="flip-up"
               data-aos-delay="300"
               data-aos-duration="1000"
@@ -50,7 +62,7 @@
               Hirusha
             </div>
             <div
-              class="font-sec inline-block font-thin text-5xl text-white"
+              class="font-sec inline-block font-thin text-4xl md:text-5xl text-white"
               data-aos="fade"
               data-aos-delay="800"
               data-aos-duration="1000"
@@ -59,16 +71,42 @@
             </div>
           </h1>
         </div>
+        <a href="#section-about" class="absolute top-[88%]">
+          <i class="fa-solid fa-chevron-down fa-beat fa-2xl opacity-50"></i>
+        </a>
       </div>
     </section>
+    <!-- sticky tiles -->
+    <div
+      class="sticky top-0 left-0 right-0 flex items-center min-h-[10vh] px-10 z-10 h-full backdrop-blur-sm bg-[#1414149c]"
+    >
+      <div class="w-full text-nowrap" data-aos="zoom" data-aos-duration="800">
+        <h1 class="font-prim font-bold text-sm">Hirusha Rubasinghe</h1>
+        <h2 class="font-prim font-light text-sm">Graduate Software Engineer</h2>
+      </div>
+      <div class="text-right opacity-20 font-mono text-nowrap hidden md:block">
+        ©️2024 | Made with
+        <i class="fa-solid fa-heart" style="color: #ff0026"></i>
+      </div>
+      <div
+        class="hidden md:grid grid-cols-5 gap-12 md:gap-8 translate-x-[-62vw] md:translate-x-[-68vw] translate-y-[85vh]"
+      >
+        <a href=""><i class="fa-brands fa-github fa-2xl"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
+        <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
+        <a href=""><i class="fa-brands fa-medium fa-2xl"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+      </div>
+    </div>
     <!-- about section -->
     <section
-      class="about-section grid sm:grid-cols-1 md:grid-cols-2 h-screen sm:space-y-10"
+      id="section-about"
+      class="about-section grid sm:grid-cols-1 md:grid-cols-2 h-full min-h-screen mb-40 md:mb-0 sm:space-y-10"
     >
       <div
         data-aos="fade"
         data-aos-duration="3000"
-        class="about-sec-col-1 flex justify-center items-center px-24 text-6xl font-bold font-prim min-h-[85vh]"
+        class="about-sec-col-1 flex justify-center items-center px-24 text-4xl md:text-5xl lg:text-6xl font-bold font-prim min-h-[85vh]"
       >
         <h1 data-aos="fade" data-aos-duration="3000" data-aos-delay="300">
           <span class="font-guest text-8xl">"</span><br />
@@ -79,7 +117,9 @@
         </h1>
       </div>
       <div class="about-sec-col-2 flex justify-center items-center px-24">
-        <div class="space-y-8 font-sec text-xl">
+        <div
+          class="space-y-8 font-sec font-extralight text-sm md:text-base lg:text-xl"
+        >
           <div data-aos="fade" data-aos-duration="1000">
             Lorem ipsum dolor sit amet consectetur. Justo volutpat mauris eget
             sit ut senectus vestibulum. Bibendum sit lacus nunc eget a et sed
@@ -104,7 +144,340 @@
         </div>
       </div>
     </section>
-    <section class="h-screen"></section>
+    <section
+      id="section-experience"
+      class="grid sm:grid-cols-1 md:grid-cols-2 min-h-screen h-full mb-40 md:mb-0 sm:space-y-10"
+    >
+      <div
+        data-aos="fade"
+        data-aos-duration="3000"
+        class="exp-sec-col-1 flex justify-center items-center px-24 text-4xl md:text-5xl lg:text-6xl font-bold font-prim min-h-[85vh]"
+      >
+        <h1 data-aos="fade" data-aos-duration="3000" data-aos-delay="300">
+          <span class="font-guest text-8xl">"</span><br />
+          <p id="typewriter-text" class="inline">
+            Extensive experience and the deep understanding of the field, fuels
+            my passion for building impactful software.
+          </p>
+        </h1>
+      </div>
+      <div class="flex justify-center items-center px-24">
+        <div
+          class="space-y-24 font-sec font-extralight text-sm md:text-base lg:text-xl"
+        >
+          <div data-aos="fade" data-aos-duration="1000">
+            <div class="font-mono text-sm opacity-60">2022-2023</div>
+            <div class="font-prim font-bold text-2xl">
+              Google, Software Engineer
+            </div>
+            <p class="mt-5">
+              tristique bibendum porta dui suscipit malesuada arcu nibh. Elit in
+              ultrices semper non iaculis. Turpis ultrices malesuada vel mollis
+              ornare mauris. Turpis nam et senectus tincidunt ut.
+            </p>
+          </div>
+          <div data-aos="fade" data-aos-duration="1000">
+            <div class="font-mono text-sm opacity-60">2021-2022</div>
+            <div class="font-prim font-bold text-2xl">
+              Microsoft, Junior Software Engineer
+            </div>
+            <p class="mt-5">
+              tristique bibendum porta dui suscipit malesuada arcu nibh. Elit in
+              ultrices semper non iaculis. Turpis ultrices malesuada vel mollis
+              ornare mauris. Turpis nam et senectus tincidunt ut.
+            </p>
+          </div>
+          <div data-aos="fade" data-aos-duration="1000">
+            <div class="font-mono text-sm opacity-60">2018-2020</div>
+            <div class="font-prim font-bold text-2xl">
+              Adobe, Junior Software Developer
+            </div>
+            <p class="mt-5">
+              tristique bibendum porta dui suscipit malesuada arcu nibh. Elit in
+              ultrices semper non iaculis. Turpis ultrices malesuada vel mollis
+              ornare mauris. Turpis nam et senectus tincidunt ut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      data-aos="fade"
+      data-aos-duration="3000"
+      id="work-section"
+      class="min-h-screen flex justify-center items-center py-28"
+    >
+      <ul class="" id="cards">
+        <li class="w-[80%] mx-auto card" id="card1">
+          <div
+            id="card"
+            class="bg-[url(../dist/Images/work-img-1.jpg)] h-[25rem] rounded-3xl"
+          >
+            <div
+              class="bg-[#111111cb] backdrop-blur-sm shadow-2xl w-full h-full px-16 py-12 rounded-3xl flex items-end"
+            >
+              <div class="w-full md:w-2/3 text-wrap">
+                <h1 class="text-lg md:text-4xl font-prim font-bold w-full mb-4">
+                  Omega, <br />Reshaping visual online presence
+                </h1>
+                <p>
+                  tristique bibendum porta dui suscipit malesuada arcu nibh.
+                  Elit in ultrices semper non iaculis. Turpis ultrices malesuada
+                  vel mollis ornare mauris. Turpis nam et senectus tincidunt ut.
+                </p>
+              </div>
+              <a
+                href=""
+                class="text-xs font-light font-prim opacity-50 md:translate-x-[18vw] lg:translate-x-[15vw] translate-y-[1.5rem] hover:opacity-100 hover:underline"
+                >Read more <i class="fa-solid fa-book-open"></i
+              ></a>
+            </div>
+          </div>
+        </li>
+        <li class="w-[80%] mx-auto card" id="card2">
+          <div
+            id="card"
+            class="bg-[url(../dist/Images/work-img-1.jpg)] h-[25rem] rounded-3xl"
+          >
+            <div
+              class="bg-[#111111cb] backdrop-blur-sm shadow-2xl w-full h-full px-16 py-12 rounded-3xl flex items-end"
+            >
+              <div class="w-full md:w-2/3 text-wrap">
+                <h1 class="text-lg md:text-4xl font-prim font-bold w-full mb-4">
+                  Omega, <br />Reshaping visual online presence
+                </h1>
+                <p>
+                  tristique bibendum porta dui suscipit malesuada arcu nibh.
+                  Elit in ultrices semper non iaculis. Turpis ultrices malesuada
+                  vel mollis ornare mauris. Turpis nam et senectus tincidunt ut.
+                </p>
+              </div>
+              <a
+                href=""
+                class="text-xs font-light font-prim opacity-50 md:translate-x-[18vw] lg:translate-x-[15vw] translate-y-[1.5rem] hover:opacity-100 hover:underline"
+                >Read more <i class="fa-solid fa-book-open"></i
+              ></a>
+            </div>
+          </div>
+        </li>
+        <li class="w-[80%] mx-auto card" id="card3">
+          <div
+            id="card"
+            class="bg-[url(../dist/Images/work-img-1.jpg)] h-[25rem] rounded-3xl"
+          >
+            <div
+              class="bg-[#111111cb] backdrop-blur-sm shadow-2xl w-full h-full px-16 py-12 rounded-3xl flex items-end"
+            >
+              <div class="w-full md:w-2/3 text-wrap">
+                <h1 class="text-lg md:text-4xl font-prim font-bold w-full mb-4">
+                  Omega, <br />Reshaping visual online presence
+                </h1>
+                <p>
+                  tristique bibendum porta dui suscipit malesuada arcu nibh.
+                  Elit in ultrices semper non iaculis. Turpis ultrices malesuada
+                  vel mollis ornare mauris. Turpis nam et senectus tincidunt ut.
+                </p>
+              </div>
+              <a
+                href=""
+                class="text-xs font-light font-prim opacity-50 md:translate-x-[18vw] lg:translate-x-[15vw] translate-y-[1.5rem] hover:opacity-100 hover:underline"
+                >Read more <i class="fa-solid fa-book-open"></i
+              ></a>
+            </div>
+          </div>
+        </li>
+        <li class="w-[80%] mx-auto card" id="card4">
+          <div
+            id="card"
+            class="bg-[url(../dist/Images/work-img-1.jpg)] h-[25rem] rounded-3xl"
+          >
+            <div
+              class="bg-[#111111cb] backdrop-blur-sm shadow-2xl w-full h-full px-16 py-12 rounded-3xl flex items-end"
+            >
+              <div class="w-full md:w-2/3 text-wrap">
+                <h1 class="text-lg md:text-4xl font-prim font-bold w-full mb-4">
+                  Omega, <br />Reshaping visual online presence
+                </h1>
+                <p>
+                  tristique bibendum porta dui suscipit malesuada arcu nibh.
+                  Elit in ultrices semper non iaculis. Turpis ultrices malesuada
+                  vel mollis ornare mauris. Turpis nam et senectus tincidunt ut.
+                </p>
+              </div>
+              <a
+                href=""
+                class="text-xs font-light font-prim opacity-50 md:translate-x-[18vw] lg:translate-x-[15vw] translate-y-[1.5rem] hover:opacity-100 hover:underline"
+                >Read more <i class="fa-solid fa-book-open"></i
+              ></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section
+      class="min-h-screen grid sm:grid-cols-1 md:grid-cols-2 py-20 gap-14 pb-60 md:pb-0"
+    >
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+        class="mt-0 md:mt-56 mx-auto md:ml-[15vw] w-[80%] h-[70vh] bg-gradient-to-b from-[#1e1e1e] to-[#0e0e0e] rounded-3xl p-14"
+      >
+        <div class="flex w-full">
+          <h1 class="text-9xl font-guest">"</h1>
+          <img src="dist/Images/face-1.png" alt="testimonial" class="ml-auto" />
+        </div>
+        <p class="font-sec font-thin text-lg mt-8">
+          tristique bibendum porta dui suscipit malesuada arcu nibh. Elit in
+          ultrices semper non iaculis. Turpis ultrices malesuada vel mollis
+          ornare mauris. Turpis nam et senectus tincidunt ut.tristique bibendum
+          porta dui suscipit malesuada arcu nibh. Elit in ultrices semper non
+          iaculis. Turpis ultrices malesuada vel mollis ornare mauris.
+        </p>
+        <div class="mt-14">
+          <h1 class="font-bold">-Mark Spencer</h1>
+          <h1 class="font-thin text-sm">Founder of ETA Technologies PVT</h1>
+        </div>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="mx-auto mt-20 md:mt-0 w-[80%] h-[70vh] bg-gradient-to-b from-[#1e1e1e] to-[#0e0e0e] rounded-3xl p-14"
+      >
+        <div class="flex w-full">
+          <h1 class="text-9xl font-guest">"</h1>
+          <img src="dist/Images/face-2.png" alt="testimonial" class="ml-auto" />
+        </div>
+        <p class="font-sec font-thin text-lg mt-8">
+          tristique bibendum porta dui suscipit malesuada arcu nibh. Elit in
+          ultrices semper non iaculis. Turpis ultrices malesuada vel mollis
+          ornare mauris. Turpis nam et senectus tincidunt ut.tristique bibendum
+          porta dui suscipit malesuada arcu nibh. Elit in ultrices semper non
+          iaculis. Turpis ultrices malesuada vel mollis ornare mauris.
+        </p>
+        <div class="mt-14">
+          <h1 class="font-bold">-Gisel Fernandez</h1>
+          <h1 class="font-thin text-sm">
+            Senior Manager at Devlin Technologies PVT
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section
+      data-aos="fade"
+      data-aos-duration="3000"
+      id="summary-section"
+      class="min-h-screen flex justify-center items-center py-28"
+    >
+      <div
+        class="md:grid md:grid-cols-3 grid-flow-row gap-4 w-[60vw] text-center"
+      >
+        <div
+          class="h-48 shadow-2xl rounded-[2rem] bg-[#181818] flex justify-center items-center mb-4 md:mb-0"
+        >
+          <div class="space-y-2">
+            <h1 class="text-6xl font-prim">11<sup>+</sup></h1>
+            <p class="opacity-30 text-sm">Project Collaborations</p>
+          </div>
+        </div>
+        <div
+          class="h-48 shadow-2xl rounded-[2rem] bg-[#181818] flex justify-center items-center mb-4 md:mb-0"
+        >
+          <div class="space-y-2">
+            <h1 class="text-6xl font-prim">
+              5<span class="text-base font-light">years</span>
+            </h1>
+            <p class="opacity-30 text-sm">Project Collaborations</p>
+          </div>
+        </div>
+        <div
+          class="shadow-2xl rounded-[2rem] bg-[#181818] flex justify-center items-center row-span-2 p-6 mb-4 md:mb-0"
+        >
+          <div class="space-y-2 text-justify">
+            <p class="text-[1rem] md:text-[1.2vw] leading-none font-bold">
+              Confident and passionate
+            </p>
+            <p class="text-[0.92rem] md:text-[1vw] leading-none font-bold">
+              about the work I do. I tend to
+            </p>
+            <p
+              class="text-[0.75rem] md:text-[0.9vw] leading-none font-semibold"
+            >
+              solve problems through creative and
+            </p>
+            <p class="text-[0.7rem] md:text-[0.8vw] leading-none font-medium">
+              innovative solutions. Turpis nam et senec
+            </p>
+            <p class="text-[0.6rem] md:text-[0.6vw] leading-none font-normal">
+              tincidunt ut.tristique bibendum porta dui suscipit
+            </p>
+            <p class="text-[0.54rem] md:text-[0.6vw] leading-none font-light">
+              nuaerf kunaefg yglaysg yg yfggdfli fl agf iwelfg fl ai fira
+            </p>
+            <p class="text-[0.54rem] md:text-[0.6vw] leading-none font-light">
+              bukeas fgael gf ixcvi i isdvi divg isdygiw hsbdi sdcuhe ufsd
+            </p>
+            <p class="text-[0.54rem] md:text-[0.6vw] leading-none font-light">
+              si sgdf hwieu sdf oa s.dg sdg usdogh wjsodh shdjfoaud .
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-48 shadow-2xl rounded-[2rem] bg-[#181818] flex justify-center items-center mb-4 md:mb-0"
+        >
+          <div class="space-y-2">
+            <h1 class="text-6xl font-prim">4<sup>+</sup></h1>
+            <p class="opacity-30 text-sm">Open-source Contributions</p>
+          </div>
+        </div>
+        <div
+          class="h-48 shadow-2xl rounded-[2rem] bg-[#181818] flex justify-center items-center mb-4 md:mb-0"
+        >
+          <div class="space-y-2">
+            <h1 class="text-6xl font-prim">
+              100<span class="text-base font-light">%</span>
+            </h1>
+            <p class="opacity-30 text-sm">Passion</p>
+          </div>
+        </div>
+        <div
+          class="h-80 md:h-48 shadow-2xl rounded-[2rem] bg-[#181818] grid grid-cols-1 md:grid-cols-2 col-span-3 mb-4 md:mb-0"
+        >
+          <div class="flex justify-start items-center pl-10">
+            <div class="space-y-2 text-justify">
+              <p class="text-[1rem] md:text-[1.2vw] leading-none font-bold">
+                Apart from the work I do,
+              </p>
+              <p class="text-[0.92rem] md:text-[1vw] leading-none font-bold">
+                I’m a great musician, a performer.
+              </p>
+              <p
+                class="text-[0.75rem] md:text-[0.9vw] leading-none font-semibold"
+              >
+                I enjoy music and I use it to help me focus
+              </p>
+              <p class="text-[0.7rem] md:text-[0.8vw] leading-none font-medium">
+                and concentrate on my work which enables
+              </p>
+              <p class="text-[0.6rem] md:text-[0.6vw] leading-none font-normal">
+                me to deliver quality workdone at time.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-[url(../dist/Images/music.jpg)] bg-cover bg-right-bottom rounded-ee-3xl rounded-es-3xl md:rounded-e-3xl md:rounded-es-none flex justify-start items-end p-5"
+          >
+            ~
+          </div>
+        </div>
+        <a
+          href=""
+          class="text-sm font-light font-prim opacity-50 hover:opacity-100 hover:underline col-span-3 text-right"
+          >CV | Get to know me better
+          <i class="fa-solid fa-circle-chevron-right"></i
+        ></a>
+      </div>
+    </section>
     <!-- animation on scroll js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- swiper js -->

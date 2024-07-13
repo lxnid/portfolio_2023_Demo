@@ -7,6 +7,43 @@
   src: url("/public/Fonts/dahlia-medium.otf") format("otf");
 }
 
+:root {
+  --cards: 2;
+  --cardHeight: 25rem;
+  --cardTopPadding: 1.5em;
+  --cardMargin: 4vw;
+}
+
+#cards {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--cards), var(--cardHeight));
+  gap: var(--cardMargin);
+  padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+  margin-bottom: var(--cardMargin);
+}
+
+#card1 {
+  --index: 1;
+}
+#card2 {
+  --index: 2;
+}
+
+#card3 {
+  --index: 3;
+}
+#card4 {
+  --index: 4;
+}
+.card {
+  position: sticky;
+  top: 26vh;
+  padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
 .about-sec-col-1::before {
   content: "";
   background-image: url("../dist/Images/bg-2.jpg");
@@ -19,6 +56,53 @@
   width: 100%;
   height: 100%;
   z-index: -1; /* Ensures background appears behind content */
+  animation: scroll-reveal-2 ease-out forwards alternate-reverse;
+  animation-timeline: view(block 50% 10%);
+  animation-duration: 1s;
+}
+.exp-sec-col-1::before {
+  content: "";
+  background-image: url("../dist/Images/bg-3.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  position: absolute;
+  opacity: 0.2;
+  top: -1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensures background appears behind content */
+  animation: scroll-reveal-2 ease-out forwards alternate-reverse;
+  animation-timeline: view(block 50% 10%);
+  animation-duration: 1s;
+}
+
+#work-section::before,
+#summary-section::before {
+  content: "";
+  background-image: url(../dist/Images/bg-4.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  opacity: 0.4;
+  top: -1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: scroll-reveal-2 ease-out forwards;
+  animation-timeline: view(block 50% 10%);
+  animation-duration: 1s;
+}
+
+#summary-section::before {
+  opacity: 0.15;
+}
+
+@keyframes scroll-reveal-2 {
+  from {
+    opacity: 0;
+  }
 }
 
 #typewriter-text {
@@ -28,11 +112,34 @@
   background-size: 0% 100%;
   background-image: linear-gradient(90deg, white, white);
   animation: scroll-reveal linear forwards;
-  animation-timeline: view();
+  animation-timeline: view(block 5% 10%);
 }
 
 @keyframes scroll-reveal {
   to {
-    background-size: 200% 100%;
+    background-size: 180% 100%;
+  }
+}
+
+.about-section {
+  opacity: 1;
+  animation: scroll-reveal-3 ease-out forwards alternate-reverse;
+  animation-timeline: view(block 40% 100%);
+  animation-duration: 1s;
+}
+
+@keyframes scroll-reveal-3 {
+  from {
+    opacity: 0;
+  }
+}
+
+.nav > a {
+  writing-mode: vertical-rl;
+}
+
+@media (min-width: 640px) {
+  .about-section {
+    animation-timeline: view(block 0 100%);
   }
 }
