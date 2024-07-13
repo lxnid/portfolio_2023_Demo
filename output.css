@@ -1239,7 +1239,7 @@ video {
 
 .exp-sec-col-1::before {
   content: "";
-  background-image: url(/dist/Images/bg-3.jpg);
+  background-image: url(dist/Images/bg-3.jpg);
   background-size: cover;
   /* Adjust as needed */
   background-position: center;
