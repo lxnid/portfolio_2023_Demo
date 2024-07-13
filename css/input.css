@@ -143,3 +143,7 @@
     animation-timeline: view(block 0 100%);
   }
 }
+
+.hero-section {
+  background-image: url(../dist/Images/bg-1.png);
+}

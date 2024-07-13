@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        "img-screen-1": `url(Images/bg-1.png)`,
+        "img-screen-1": `url(/dist/Images/bg-1.png)`,
       }),
       fontFamily: {
         dahlia: ["dahlia", "sans-serif"],

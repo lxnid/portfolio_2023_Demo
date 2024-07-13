@@ -905,12 +905,12 @@ video {
   background-image: url(../dist/Images/work-img-1.jpg);
 }
 
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+.bg-\[url\(\.\.\/dist\\Images\\bg-1\.png\)\] {
+  background-image: url(../dist\Images\bg-1.png);
 }
 
-.bg-img-screen-1 {
-  background-image: url(Images/bg-1.png);
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 .from-\[\#1e1e1e\] {
@@ -925,10 +925,6 @@ video {
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-fixed {
-  background-attachment: fixed;
 }
 
 .bg-right-bottom {
@@ -1331,6 +1327,10 @@ video {
   .about-section {
     animation-timeline: view(block 0 100%);
   }
+}
+
+.hero-section {
+  background-image: url(../dist/Images/bg-1.png);
 }
 
 .hover\:underline:hover {
