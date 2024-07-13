@@ -1350,6 +1350,10 @@ video {
   }
 }
 
+.hero-section {
+  background-image: url(dist/Images/bg-1.png);
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
