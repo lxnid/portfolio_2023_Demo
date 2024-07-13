@@ -733,8 +733,8 @@ video {
   min-height: 100vh;
 }
 
-.w-\[60vw\] {
-  width: 60vw;
+.w-\[65vw\] {
+  width: 65vw;
 }
 
 .w-\[80\%\] {
@@ -897,14 +897,6 @@ video {
   background-color: rgb(24 24 24 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\.\.\/dist\/Images\/music\.jpg\)\] {
-  background-image: url(../dist/Images/music.jpg);
-}
-
-.bg-\[url\(\.\.\/dist\/Images\/work-img-1\.jpg\)\] {
-  background-image: url(../dist/Images/work-img-1.jpg);
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -944,11 +936,6 @@ video {
   padding-right: 2.5rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .px-24 {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -985,6 +972,10 @@ video {
 
 .pl-10 {
   padding-left: 2.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-center {
@@ -1053,10 +1044,6 @@ video {
   line-height: 1;
 }
 
-.text-\[0\.54rem\] {
-  font-size: 0.54rem;
-}
-
 .text-\[0\.6rem\] {
   font-size: 0.6rem;
 }
@@ -1095,6 +1082,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1239,7 +1231,7 @@ video {
 
 .exp-sec-col-1::before {
   content: "";
-  background-image: url(dist/Images/bg-3.jpg);
+  background-image: url(/dist/Images/bg-3.jpg);
   background-size: cover;
   /* Adjust as needed */
   background-position: center;
@@ -1347,6 +1339,11 @@ video {
     margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
   }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1382,6 +1379,10 @@ video {
     width: 66.666667%;
   }
 
+  .md\:w-\[60vw\] {
+    width: 60vw;
+  }
+
   .md\:translate-x-\[-68vw\] {
     --tw-translate-x: -68vw;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1411,6 +1412,11 @@ video {
 
   .md\:rounded-es-none {
     border-end-start-radius: 0px;
+  }
+
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .md\:pb-0 {
@@ -1460,6 +1466,16 @@ video {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
