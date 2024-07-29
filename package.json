@@ -1,13 +1,13 @@
 {
   "name": "Hirusha Rubasinghe",
   "version": "1.0.0",
-  "description": "",
+  "description": "My personal portfolio website; hand-crafted by myself",
   "main": "index.js",
   "scripts": {
     "build": "npx tailwindcss -i ./css/input.css -o output.css",
     "watch": "npx tailwindcss -i ./css/input.css -o output.css --watch"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.4"
+    "tailwindcss": "^3.4.7"
   }
 }
